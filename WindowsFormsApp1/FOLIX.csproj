@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9513B96C-5813-4228-BCE2-501FD99B6806}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cpf, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cpf.2.1.0\lib\Cpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tulpep.NotificationWindow, Version=1.1.38.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tulpep.NotificationWindow.1.1.38\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdicionarPop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdicionarPop.Designer.cs">
+      <DependentUpon>AdicionarPop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Erro de Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Erro de Registro.Designer.cs">
+      <DependentUpon>Erro de Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Começar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Começar.Designer.cs">
+      <DependentUpon>Começar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bem vindoF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bem vindoF.Designer.cs">
+      <DependentUpon>Bem vindoF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Erro de RegistroF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Erro de RegistroF.Designer.cs">
+      <DependentUpon>Erro de RegistroF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstoqueFor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstoqueFor.Designer.cs">
+      <DependentUpon>EstoqueFor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstoqueFun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstoqueFun.Designer.cs">
+      <DependentUpon>EstoqueFun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeFor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeFor.Designer.cs">
+      <DependentUpon>HomeFor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFor.Designer.cs">
+      <DependentUpon>LoginFor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFun.Designer.cs">
+      <DependentUpon>LoginFun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReFornecedor.Designer.cs">
+      <DependentUpon>ReFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroF.Designer.cs">
+      <DependentUpon>RegistroF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bem vindo!.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bem vindo!.Designer.cs">
+      <DependentUpon>Bem vindo!.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RelatórioForPop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatórioForPop.Designer.cs">
+      <DependentUpon>RelatórioForPop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelatórioPop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatórioPop.Designer.cs">
+      <DependentUpon>RelatórioPop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatórios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatórios.Designer.cs">
+      <DependentUpon>Relatórios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoverPop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoverPop.Designer.cs">
+      <DependentUpon>RemoverPop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RProdução.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RProdução.Designer.cs">
+      <DependentUpon>RProdução.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SolicitaçõesFor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolicitaçõesFor.Designer.cs">
+      <DependentUpon>SolicitaçõesFor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FormManager.cs" />
+    <EmbeddedResource Include="AdicionarPop.resx">
+      <DependentUpon>AdicionarPop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Erro de Registro.resx">
+      <DependentUpon>Erro de Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Começar.resx">
+      <DependentUpon>Começar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bem vindoF.resx">
+      <DependentUpon>Bem vindoF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Erro de RegistroF.resx">
+      <DependentUpon>Erro de RegistroF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstoqueFor.resx">
+      <DependentUpon>EstoqueFor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstoqueFun.resx">
+      <DependentUpon>EstoqueFun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeFor.resx">
+      <DependentUpon>HomeFor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFor.resx">
+      <DependentUpon>LoginFor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFun.resx">
+      <DependentUpon>LoginFun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReFornecedor.resx">
+      <DependentUpon>ReFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroF.resx">
+      <DependentUpon>RegistroF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bem vindo!.resx">
+      <DependentUpon>Bem vindo!.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RelatórioForPop.resx">
+      <DependentUpon>RelatórioForPop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatórioPop.resx">
+      <DependentUpon>RelatórioPop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatórios.resx">
+      <DependentUpon>Relatórios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoverPop.resx">
+      <DependentUpon>RemoverPop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RProdução.resx">
+      <DependentUpon>RProdução.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolicitaçõesFor.resx">
+      <DependentUpon>SolicitaçõesFor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
